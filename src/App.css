@@ -1,38 +1,60 @@
-.App {
+.component-container {
+  padding: 10px 0 10px 0;
+  border-bottom: 1px solid black;
+}
+
+.component-container:nth-child(even) {
+  background-color: rgb(233, 233, 233);
+}
+
+.single-cocktail {
+  display: inline-block;
+  width: 200px;
+  margin: 12px 8px;
+  border: 1px solid black;
+  border-radius: 5px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.cocktail-name {
+  margin: 10px 0;
+  font-size: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.single-cocktail button {
+  margin: 10px 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.edit-liquor-form {
+  border: 1px solid black;
+  margin: 20px 30px;
+  width: 600px;
+  padding-top: 30px;
+  border-radius: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+/* input[type='text'],
+input[type='number'] {
+  display: block;
+  width: 400px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #555;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+} */
+
+.form-control {
+  margin-bottom: 20px;
+  margin-left: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.response-messages {
+  margin-left: 40px;
+}
+
+.delete-btn {
+  color: red;
 }
