@@ -12,7 +12,9 @@ export default function SingleMixer(props) {
   return (
     <Fragment>
       <li style={listItem}>
-        <div style={listName}>{mixer.type}</div>
+        <div style={listName}>
+          {mixer.type} - {mixer.category}
+        </div>
         <button onClick={() => setShowForm(!showForm)}>
           {showForm ? 'less' : 'more'}
         </button>

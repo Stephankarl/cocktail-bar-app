@@ -55,10 +55,10 @@ export default function AddCocktail(props) {
         <Form>
           {/* COCKTAIL NAME  */}
           <div>
-            <label htmlFor='name' style={cocktailLabel}>
+            <label htmlFor='cocktailName' style={cocktailLabel}>
               Name of Cocktail
             </label>
-            <Field type='text' name='name' id='name' style={cocktailFieldStyle} />
+            <Field type='text' name='name' id='cocktailName' style={cocktailFieldStyle} />
             <ErrorMessage name='name' />
           </div>
 
@@ -110,13 +110,13 @@ export default function AddCocktail(props) {
 
                         {/* LIQUOR CATEGORY FIELD  */}
                         <div>
-                          <label htmlFor='category' style={label}>
+                          <label htmlFor='liquorCategory' style={label}>
                             Category
                           </label>
                           <Field
                             as='select'
                             name={`liquor[${index}].category`}
-                            id='category'
+                            id='liquorCategory'
                             style={fieldStyle}
                           >
                             <option defaultValue=''>Choose One</option>
@@ -130,14 +130,14 @@ export default function AddCocktail(props) {
 
                         {/* LIQUOR NAME FIELD  */}
                         <div>
-                          <label htmlFor='name' style={label}>
+                          <label htmlFor='liquorName' style={label}>
                             Name
                           </label>
 
                           <Field
                             as='select'
                             name={`liquor[${index}].name`}
-                            id='name'
+                            id='liquorName'
                             style={fieldStyle}
                           >
                             <option defaultValue=''>Choose One</option>
@@ -152,13 +152,13 @@ export default function AddCocktail(props) {
 
                         {/* QUANTITY OF LIQUOR  */}
                         <div>
-                          <label htmlFor='quantity' style={label}>
+                          <label htmlFor='liquorQuantity' style={label}>
                             Quantity in shots
                           </label>
                           <Field
                             as='select'
                             name={`liquor[${index}].quantity`}
-                            id='quantity'
+                            id='liquorQuantity'
                             defaultValue='0'
                             style={fieldStyle}
                           >
@@ -218,13 +218,13 @@ export default function AddCocktail(props) {
 
                         {/* MIXER CATEGORY FIELD  */}
                         <div>
-                          <label htmlFor='category' style={label}>
+                          <label htmlFor='mixerCategory' style={label}>
                             Category
                           </label>
                           <Field
                             as='select'
                             name={`mixers[${index}].category`}
-                            id='category'
+                            id='mixerCategory'
                             style={fieldStyle}
                           >
                             <option defaultValue=''>Choose One</option>
@@ -237,13 +237,13 @@ export default function AddCocktail(props) {
                         </div>
 
                         <div>
-                          <label htmlFor='quantity' style={label}>
+                          <label htmlFor='mixerQuantity' style={label}>
                             Quantity
                           </label>
                           <Field
                             as='select'
                             name={`mixers[${index}].quantity`}
-                            id='quantity'
+                            id='mixerQuantity'
                             style={fieldStyle}
                           >
                             <option key='0'>0</option>

@@ -12,7 +12,9 @@ export default function SingleLiquor(props) {
   return (
     <Fragment>
       <li style={listItem}>
-        <div style={listName}>{liquor.name}</div>
+        <div style={listName}>
+          {liquor.type} - {liquor.name}
+        </div>
         <button onClick={() => setShowForm(!showForm)}>
           {showForm ? 'less' : 'more'}
         </button>
